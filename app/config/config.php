@@ -1,7 +1,7 @@
 <?php
 //$conexion = mysqli_connect("bxgvbqru5r7prhsdpnvr-mysql.services.clever-cloud.com", "utur7aovmczn6qtf", "Pp83ju823IBh0nmPhQ9v", "bxgvbqru5r7prhsdpnvr");
 
-$conexion = mysqli_connect("localhost:3307", "root", "", "bicxita7oa0kn6veyzi8");
+$conexion = mysqli_connect("b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com", "ur1re1yuwciacaux", "V9tdRrTHovr3L2CrwSNR", "b4zvuzltbielkxf4zjs3");
 ?>
 
 
@@ -19,14 +19,14 @@ define('USUARIO', 'utur7aovmczn6qtf');
 define('PASSWOD', 'Pp83ju823IBh0nmPhQ9v');
 define('BD', 'bxgvbqru5r7prhsdpnvr');
 */
-define('SERVIDOR', 'localhost:3307');
-define('USUARIO', 'root');
-define('PASSWOD', '');
-define('BD', 'bicxita7oa0kn6veyzi8');
+define('SERVIDOR', 'b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com');
+define('USUARIO', 'ur1re1yuwciacaux');
+define('PASSWOD', 'V9tdRrTHovr3L2CrwSNR');
+define('BD', 'b4zvuzltbielkxf4zjs3');
 
 //$URL = 'http://localhost/tecnm';
 
-$URL = 'mysql://uapkjgg1v9wsmgng:bftdNJiNdcIo05v5dJRs@bicxita7oa0kn6veyzi8-mysql.services.clever-cloud.com:3306/bicxita7oa0kn6veyzi8';
+$URL = 'mysql://ur1re1yuwciacaux:V9tdRrTHovr3L2CrwSNR@b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com:3306/b4zvuzltbielkxf4zjs3';
 //$URL = 'http://localhost/tecnm';
 
 $servidor = "mysql:dbname=" . BD . ";host=" . SERVIDOR;
@@ -61,17 +61,17 @@ try {
   echo "Error" . $e->getMessage();
 }
 */
-$server = "localhost:3307";
-$user = "root";
+$server = "b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com";
+$user = "ur1re1yuwciacaux";
 $pass = "";
-$bd = "bicxita7oa0kn6veyzi8";
+$bd = "b4zvuzltbielkxf4zjs3";
 
 $conect = new mysqli($server, $user, $pass, $bd);
 ?>
 <?php
-$database = "bicxita7oa0kn6veyzi8";
-$user = 'root';
-$password = '';
+$database = "b4zvuzltbielkxf4zjs3";
+$user = 'ur1re1yuwciacaux';
+$password = 'V9tdRrTHovr3L2CrwSNR';
 
 
 try {
@@ -90,7 +90,7 @@ try {
 }
 */
 try {
-  $bdd = new PDO('mysql:host=localhost:3307;dbname=bicxita7oa0kn6veyzi8;charset=utf8', 'root', '');
+  $bdd = new PDO('mysql:host=b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com;dbname=b4zvuzltbielkxf4zjs3', 'ur1re1yuwciacaux', 'V9tdRrTHovr3L2CrwSNR');
 } catch (Exception $e) {
   die('Error : ' . $e->getMessage());
 }
