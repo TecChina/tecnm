@@ -63,7 +63,7 @@ try {
 */
 $server = "b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com";
 $user = "ur1re1yuwciacaux";
-$pass = "";
+$pass = "V9tdRrTHovr3L2CrwSNR";
 $bd = "b4zvuzltbielkxf4zjs3";
 
 $conect = new mysqli($server, $user, $pass, $bd);
