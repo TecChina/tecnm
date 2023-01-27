@@ -1,6 +1,6 @@
 <?php
 //$conexion = mysqli_connect("bxgvbqru5r7prhsdpnvr-mysql.services.clever-cloud.com", "utur7aovmczn6qtf", "Pp83ju823IBh0nmPhQ9v", "bxgvbqru5r7prhsdpnvr");
-
+// ---
 $conexion = mysqli_connect("b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com", "ur1re1yuwciacaux", "V9tdRrTHovr3L2CrwSNR", "b4zvuzltbielkxf4zjs3");
 ?>
 
