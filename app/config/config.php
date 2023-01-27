@@ -76,7 +76,7 @@ $password = 'V9tdRrTHovr3L2CrwSNR';
 
 try {
 
-  $con = new PDO('mysql:host=localhost:3307;dbname=' . $database, $user, $password);
+  $con = new PDO('mysql:host=b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com;dbname=b4zvuzltbielkxf4zjs3' . $database, $user, $password);
 } catch (PDOException $e) {
   echo "Error" . $e->getMessage();
 }
