@@ -1,0 +1,22 @@
+.modal-header{
+    background-color: #337ab7;
+}
+.modal-title{
+    color: white;
+}
+.close span{
+    color: white;
+}
+.container_buscador{
+   
+    width: 450px;
+    height: 100px;
+}
+#datos_buscador{
+   height: 70px;
+
+}
+
+
+
+  
