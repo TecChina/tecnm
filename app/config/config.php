@@ -29,7 +29,7 @@ define('BD', 'b4zvuzltbielkxf4zjs3');
 $URL = 'mysql://ur1re1yuwciacaux:V9tdRrTHovr3L2CrwSNR@b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com:3306/b4zvuzltbielkxf4zjs3';
 //$URL = 'http://localhost/tecnm';
 
-$servidor = "mysql:dbname=" . BD . ";host=" . SERVIDOR;
+$servidor = "mysql:dbname=b4zvuzltbielkxf4zjs3" . BD . ";host=b4zvuzltbielkxf4zjs3-mysql.services.clever-cloud.com" . SERVIDOR;
 
 try {
   $pdo = new PDO($servidor, USUARIO, PASSWOD, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
