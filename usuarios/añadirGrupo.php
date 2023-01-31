@@ -80,7 +80,7 @@ Asignación de tutores al grupo
 <th>Carrera</th>
 <th>Semestre</th>
 <th>Ciclo escolar</th>
-<th>Dias tutoria</th>
+<th>Dias de tutoria</th>
 <th>Hora inicio</th>
 <th>Hora finalizacion</th>
 <th>Acciones</th>

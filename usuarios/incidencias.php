@@ -37,7 +37,7 @@ if (isset($_SESSION['u_usuario'])) {
 
     <head>
         <?php include('../layout/head.php'); ?>
-        <title>Incidencias</title>
+        <title>Seguimiento Tutoral</title>
 
         <style type="text/css">
             #mostrartext {
@@ -85,22 +85,22 @@ if (isset($_SESSION['u_usuario'])) {
             <div class="content-wrapper">
 
                 <section class="content-header">
-                    <h1>Modulo de Tutorias-Incidencias inciadas</h1>
+                    <h1>Modulo de Tutorias-Seguimiento Tutoral Iniciada</h1>
                 </section>
 
                 <div class="container">
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Nueva Incidencia</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Nuevo Seguimiento Tutoral</button>
 
                 </div>
 
 
                 <section class="content">
 
-                    <a href="historial_detenido.php"> <button type="button" class="btn btn-danger">INCIDENCIA PAUSADA: <?php echo $numeroo ?></button></a>
+                    <a href="historial_detenido.php"> <button type="button" class="btn btn-danger">SEGUIMIENTO TUTORAL PAUSADA: <?php echo $numeroo ?></button></a>
 
-                    <a href="historial_proceso.php"> <button type="button" class="btn btn-warning">INCIDENCIA PROCESO: <?php echo $numero_proceso ?></button></a>
+                    <a href="historial_proceso.php"> <button type="button" class="btn btn-warning">SEGUIMIENTO TUTORAL EN PROCESO: <?php echo $numero_proceso ?></button></a>
 
-                    <a href="historial_actualizacion.php"> <button type="button" class="btn btn-primary">INCIDENCIA FINALIZADA</button></a>
+                    <a href="historial_actualizacion.php"> <button type="button" class="btn btn-primary">SEGUIMIENTO TUTORAL FINALIZADA</button></a>
                     
                     <a href="asesorias_info.php"> <button type="button" class="btn btn-primary">ASESORIAS</button></a>
 
@@ -111,7 +111,7 @@ if (isset($_SESSION['u_usuario'])) {
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h4 class="modal-title" id="exampleModalLabel" class="custom">Nueva incidencia</h4>
+                                        <h4 class="modal-title" id="exampleModalLabel" class="custom">Nuevo Seguimiento Tutoral</h4>
                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                                             <button>
                                     </div>
@@ -337,7 +337,7 @@ if (isset($_SESSION['u_usuario'])) {
                                                 <div class="form-group">
                                                     <label for="motivo">Motivo</label>
                                                     <div class="">
-                                                        <textarea name="motivo" id="" class="form-control" placeholder="Motivo de incidencia" required>
+                                                        <textarea name="motivo" id="" class="form-control" placeholder="Motivo de seguimiento tutoral" required>
                             </textarea>
                                                     </div>
                                                 </div>
@@ -367,7 +367,7 @@ if (isset($_SESSION['u_usuario'])) {
                     <div class="panel panel-primary">
 
 
-                        <div class="panel-heading">Listado de incidencia</div>
+                        <div class="panel-heading">Listado de seguimiento tutoral</div>
                         <div class="panel-body">
                             <table class="table table-bordered table-hover table-condensed">
 
@@ -375,8 +375,8 @@ if (isset($_SESSION['u_usuario'])) {
                                 <th>Categoria</th>
                                 <th>Prioridad</th>
                                 <th>Matricula</th>
-                                <th>Estado de inicidencia</th>
-                                <th>Fecha y hora de incidencia</th>
+                                <th>Estado de seguimiento tutoral</th>
+                                <th>Fecha y hora de seguimiento tutoral</th>
                                 <th>Acciones</th>
 
 
@@ -431,19 +431,19 @@ if (isset($_SESSION['u_usuario'])) {
 
 
 
-                                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example<?php echo $filas['id_incidencia']; ?>">
-                                                Actualizar estado de la incidencia
+                                        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example<?php echo $filas['id_seguimiento tutoral']; ?>">
+                                                Actualizar estado de seguimiento tutoral 
                                             </button></td>
 
 
 
 
 
-                                        <div class="modal fade" id="example<?php echo $filas['id_incidencia']; ?>" tabindex="-1" aria-labelledby="example" aria-hidden="true">
+                                        <div class="modal fade" id="example<?php echo $filas['id_seguimiento tutoral']; ?>" tabindex="-1" aria-labelledby="example" aria-hidden="true">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="example">Actualización de Incidencia</h5>
+                                                        <h5 class="modal-title" id="example">Actualización de Seguimiento tutoral</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -451,15 +451,15 @@ if (isset($_SESSION['u_usuario'])) {
                                                     </div>
 
 
-                                                    <form method="post" action="actualizar_incidencia.php" class="actualizar_incidencia">
-                                                        <input type="hidden" name="id" value="<?php echo $filas['id_incidencia']; ?>">
+                                                    <form method="post" action="actualizar_seguimiento tutoral.php" class="actualizar_seguimiento tutoral">
+                                                        <input type="hidden" name="id" value="<?php echo $filas['id_seguimiento tutoral']; ?>">
 
                                                         <div class="modal-body" id="">
                                                             <div class="row">
                                                                 <div class="col">
                                                                     <div class="form-group">
-                                                                        <label>Numero de incidencia: </label>
-                                                                        <?php echo $filas['id_incidencia']; ?>
+                                                                        <label>Numero de seguimiento tutoral: </label>
+                                                                        <?php echo $filas['id_seguimiento tutoral']; ?>
                                                                     </div>
                                                                 </div>
 
@@ -498,8 +498,8 @@ if (isset($_SESSION['u_usuario'])) {
 
 
                                                             <div class="form-group" class="col-sm2 control-label">
-                                                                <label for="status">Seleccionar Status de incidencia</label>
-                                                                <select name="status" id="status" class="form-control" value="<?php echo $filas['id_incidencia']; ?>">
+                                                                <label for="status">Seleccionar Status de seguimiento tutoral</label>
+                                                                <select name="status" id="status" class="form-control" value="<?php echo $filas['id_seguimiento tutoral']; ?>">
                                                                     <option value="">Elegir una Opcion</option>
                                                                     <option value="1" <?= (isset($incidencia) && $incidencia == 1) ? 'selected' : '' ?>>En proceso</option>
                                                                     <option value="2" <?= (isset($incidencia) && $incidencia == 2) ? 'selected' : '' ?>>Pausa</option>
@@ -605,7 +605,7 @@ if (isset($_SESSION['u_usuario'])) {
 
 
         <script>
-            $('.actualizar_incidencia').submit(function(e) {
+            $('.actualizar_seguimiento tutoral').submit(function(e) {
       e.preventDefault();
       Swal.fire({
         title: '¿DESEAS GUARDAR LOS CAMBIOS?',
