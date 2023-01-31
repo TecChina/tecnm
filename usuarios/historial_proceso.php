@@ -38,7 +38,7 @@ $correo_sesion = $_SESSION['u_usuario'];
 <html>
 <head>
   <?php include ('../layout/head.php'); ?>
-  <title>Incidencias</title>
+  <title>Seguimiento Tutoral</title>
 </head>
   <body class="hold-transition skin-blue sidebar-mini">
   <div class="wrapper">
@@ -58,7 +58,7 @@ $correo_sesion = $_SESSION['u_usuario'];
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Incidencias
+      Seguimiento Tutoral
       </h1>
      
     </section>
@@ -67,16 +67,16 @@ $correo_sesion = $_SESSION['u_usuario'];
     <section class="content"> 
 
 
-  <a href="incidencias.php">  <button type="button" class="btn btn-success">Incidencia iniciada: <?php echo $numero ?></button></a>
-  <a href="historial_detenido.php">  <button type="button" class="btn btn-danger">Incidencia detenido: <?php echo $numero ?></button></a>
+  <a href="incidencias.php">  <button type="button" class="btn btn-success">Seguimiento tutoral iniciada: <?php echo $numero ?></button></a>
+  <a href="historial_detenido.php">  <button type="button" class="btn btn-danger">Seguimiento tutoral detenido: <?php echo $numero ?></button></a>
                   <!-- Modal -->
 
-  <!-- Listado de incidencias -->
+  <!-- Listado de Seguimiento Tutoral -->
      
     <div class="panel panel-primary">
    
         
-  <div class="panel-heading">Listado de incidencia</div>
+  <div class="panel-heading">Listado de seguimiento tutoral</div>
   <div class="panel-body">
   <table class="table table-bordered table-hover table-condensed">
  
@@ -84,8 +84,8 @@ $correo_sesion = $_SESSION['u_usuario'];
   <th>Categoria</th>
   <th>Prioridad</th>
   <th>Matricula</th>
-  <th>Estado de inicidencia</th>
-  <th>Fecha y hora de incidencia</th>
+  <th>Estado de seguimiento tutoral</th>
+  <th>Fecha y hora de seguimiento tutoral</th>
   <th>Acciones</th>
   
 
@@ -141,7 +141,7 @@ echo '<span class="rounded-pill badge badge-warning bg-yellow px-3">En proceso</
      
 
 <td><button type="button" class="btn btn-primary"  data-toggle="modal" data-target="#example<?php echo $filas['id_incidencia']; ?>">
-          Actualizar estado de incidencias
+          Actualizar estado de seguimiento tutoral
       </button></td>
      
     
@@ -152,7 +152,7 @@ echo '<span class="rounded-pill badge badge-warning bg-yellow px-3">En proceso</
  <div class="modal-dialog">
  <div class="modal-content">
  <div class="modal-header">
- <h5 class="modal-title" id="example">Actualizar estado de incidencia</h5>
+ <h5 class="modal-title" id="example">Actualizar estado de seguimiento tutoral</h5>
  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <span aria-hidden="true">&times;</span>
 </button>
@@ -165,7 +165,7 @@ echo '<span class="rounded-pill badge badge-warning bg-yellow px-3">En proceso</
 
  <div class="modal-body" id="">
 <div class="form-group">
-  <label>Id incidencia: </label>
+  <label>Id seguimiento tutoral: </label>
  <?php echo $filas['id_incidencia']; ?>
 </div>
 
@@ -177,7 +177,7 @@ echo '<span class="rounded-pill badge badge-warning bg-yellow px-3">En proceso</
 
 
 <div class="form-group" class="col-sm2 control-label">
-  <label for="status">Seleccionar Status de incidencia</label>
+  <label for="status">Seleccionar Status de seguimiento tutoral</label>
     <select name="status" id="" class="form-control" value="<?php echo $filas['id_incidencia']; ?>">
       <option value="">Elegir una Opcion</option>
 <option value="3" <?= (isset($incidencia) && $incidencia == 3) ? 'selected' : '' ?>>Finalizada</option>
