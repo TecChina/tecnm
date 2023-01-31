@@ -56,7 +56,7 @@ if (isset($_SESSION['u_usuario']) && $_SESSION['u_privilegio']  == 0 ) {
 
   <head>
     <?php include('../layout/head.php'); ?>
-    <title>Listado de Jef</title>
+    <title>Listado de Jefas</title>
   </head>
 
   <body class="hold-transition skin-blue sidebar-mini">
