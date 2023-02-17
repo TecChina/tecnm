@@ -87,8 +87,8 @@ Nuevo Tutor
 <table class="table table-bordered table-hover table-condensed">
 
 <th>Nombre</th>
-<th>Apellido materno</th>
 <th>Apellido paterno</th>
+<th>Apellido materno</th>
    <th>Grupo asignado</th>
 
 

@@ -162,7 +162,7 @@ if (isset($_SESSION['u_usuario']) && $_SESSION['u_privilegio']  == 0) {
                                 </div>
 
                                 <div>
-                                  <label>Nombres</label>
+                                  <label>Nombre</label>
                                   <!-- <input type="text" name="nombres" id="" class="form-control" placeholder="nombres"> -->
                                   <input type="text" name="nombres" id="" class="form-control" placeholder="nombres" value="<?php echo $nombres; ?>">
                                 </div>

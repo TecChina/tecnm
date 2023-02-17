@@ -46,7 +46,7 @@ $correo_sesion = $_SESSION['u_usuario'];
 
 
   <?php include ('../layout/head.php'); ?>
-  <title>Historial incidencias</title>
+  <title>Historial de Seguimiento Tutoral</title>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -62,7 +62,7 @@ $correo_sesion = $_SESSION['u_usuario'];
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-        Historial de incidencias finalizadas
+        Historial de seguimiento tutoral finalizada
       
       </h1>
      

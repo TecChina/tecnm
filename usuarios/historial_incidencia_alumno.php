@@ -120,14 +120,14 @@ if (isset($_SESSION['u_usuario'])) {
 <div class="panel panel-primary">
    
         
-   <div class="panel-heading">Historial de incidencia de alumno</div>
+   <div class="panel-heading">Historial de seguimiento totural del alumno</div>
    <div class="panel-body">
    <table class="table table-bordered table-hover table-condensed">
   
    <th>Numero de control</th>
    <th>Motivo</th>
    <th>Categoria</th>
-   <th>Fecha y hora de incidencia</th>
+   <th>Fecha y hora de seguimiento tutotal</th>
    
                                              
   <?php 

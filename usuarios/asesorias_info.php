@@ -37,7 +37,7 @@ if (isset($_SESSION['u_usuario'])) {
 
     <head>
         <?php include('../layout/head.php'); ?>
-        <title>Incidencias</title>
+        <title>Seguimiento Tutoral</title>
 
         <style type="text/css">
             #mostrartext {
@@ -89,16 +89,16 @@ if (isset($_SESSION['u_usuario'])) {
             <div class="content-wrapper">
 
                 <section class="content-header">
-                    <h1>Modulo de Tutorias-Incidencias-Asesorias</h1>
+                    <h1>Modulo de Tutorias-Seguimiento Tutoral-Asesorias</h1>
                 </section>
 
 
 
                 <section class="content">
 
-                    <a href="historial_detenido.php"> <button type="button" class="btn btn-danger">INCIDENCIA PAUSADA: <?php echo $numeroo ?></button></a>
+                    <a href="historial_detenido.php"> <button type="button" class="btn btn-danger">Seguimiento Tutoral Pausada: <?php echo $numeroo ?></button></a>
 
-                    <a href="historial_proceso.php"> <button type="button" class="btn btn-warning">INCIDENCIA PROCESO: <?php echo $numero_proceso ?></button></a>
+                    <a href="historial_proceso.php"> <button type="button" class="btn btn-warning">Seguimiento Tutoral En Proceso: <?php echo $numero_proceso ?></button></a>
 
 
 
@@ -109,12 +109,12 @@ if (isset($_SESSION['u_usuario'])) {
                     <br>
                     <br>
 
-                    <!-- Listado de incidencias -->
+                    <!-- Listado de Seguimiento Tutoral -->
 
                     <div class="panel panel-primary">
 
 
-                        <div class="panel-heading">Listado de incidencia</div>
+                        <div class="panel-heading">Listado de seguimiento tutoral</div>
                         <div class="panel-body">
                             <table class="table table-bordered table-hover table-condensed">
 
@@ -122,8 +122,8 @@ if (isset($_SESSION['u_usuario'])) {
                                 <th>Categoria</th>
                                 <th>Prioridad</th>
                                 <th>Matricula</th>
-                                <th>Estado de inicidencia</th>
-                                <th>Fecha y hora de incidencia</th>
+                                <th>Estado de seguimiento tutoral</th>
+                                <th>Fecha y hora de seguimiento tutoral</th>
                                 <th>Acciones</th>
 
 
@@ -179,12 +179,12 @@ if (isset($_SESSION['u_usuario'])) {
 
                                         <?php if ($filas['observacion_finalizada'] == null) { ?>
                                             <td><button type="button" class="btn btn-primary rounded-pill" data-toggle="modal" disabled data-target="#example<?php echo $filas['id_incidencia']; ?>">
-                                                    Actualizar estado de la incidencia
+                                                    Actualizar estado de seguimiento tutoral
                                                 </button></td>
 
                                         <?php } else { ?>
                                             <td><button type="button" class="btn btn-primary rounded-pill" data-toggle="modal" data-target="#example<?php echo $filas['id_incidencia']; ?>">
-                                                    Actualizar estado de la incidencia
+                                                    Actualizar estado de seguimiento tutoral
                                                 </button></td>
 
                                         <?php } ?>
@@ -213,7 +213,7 @@ if (isset($_SESSION['u_usuario'])) {
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="example">Actualización de Incidencia</h5>
+                                                        <h5 class="modal-title" id="example">Actualización de seguimiento tutoral</h5>
                                                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
                                                         </button>
@@ -228,7 +228,7 @@ if (isset($_SESSION['u_usuario'])) {
                                                             <div class="row">
                                                                 <div class="col">
                                                                     <div class="form-group">
-                                                                        <label>Numero de incidencia: </label>
+                                                                        <label>Numero de seguimiento tutoral: </label>
                                                                         <?php echo $filas['id_incidencia']; ?>
                                                                     </div>
                                                                 </div>
@@ -268,7 +268,7 @@ if (isset($_SESSION['u_usuario'])) {
 
 
                                                             <div class="form-group" class="col-sm2 control-label">
-                                                                <label for="status">Seleccionar Status de incidencia</label>
+                                                                <label for="status">Seleccionar Status de seguimiento tutoral</label>
                                                                 <select name="status" id="status" class="form-control" value="<?php echo $filas['id_incidencia']; ?>">
                                                                     <option value="">Elegir una Opcion</option>
                                                                     <option value="1" <?= (isset($incidencia) && $incidencia == 1) ? 'selected' : '' ?>>En proceso</option>
@@ -382,7 +382,7 @@ if (isset($_SESSION['u_usuario'])) {
                                                 </div>
 
                                                 <div class="col">
-                                                    <label for="">Dias asesorias:</label>
+                                                    <label for="">Dias de asesorias:</label>
 
                                                     <?php if ($filas['lunes'] == 'si') {
                                                         echo "Lunes";
