@@ -73,7 +73,7 @@
           </div>
           <div class="form-group">
             <input type="submit" value="Ingresar" class="btn btn-primary btn-block">
-            <a href="login/registro.php" class="btn btn-default btn-block">Registrar</a>
+            <a href="login/registro.php" class="btn btn-default btn-block">Registro</a>
           </div>
         </form>
       </div>
