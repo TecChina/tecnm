@@ -241,7 +241,7 @@ if (isset($_SESSION['u_usuario']) && $_SESSION['u_privilegio']  == 2) {
                       <div class="modal-footer">
                         <!-- <a href="ctrl_suscribir.php" class="btn btn-primary">Suscribirme a esta actividad</a> -->
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary">Suscribirme a esta actividad</button>
+                        <button type="submit" class="btn btn-primary">Inscripción a la actividad</button>
 
                       </div>
                   </form>
@@ -265,7 +265,7 @@ if (isset($_SESSION['u_usuario']) && $_SESSION['u_privilegio']  == 2) {
           <script src='js/fullcalendar/locale/es.js'></script>
 
           <script>
-              //alerta guardar----------------
+            //alerta guardar----------------
             $('.suscribirse').submit(function(e) {
               e.preventDefault();
               Swal.fire({
@@ -291,7 +291,7 @@ if (isset($_SESSION['u_usuario']) && $_SESSION['u_privilegio']  == 2) {
               })
 
             });
-            </script>
+          </script>
 
 
           <script>
