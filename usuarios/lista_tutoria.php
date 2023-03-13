@@ -138,13 +138,13 @@ $correo_sesion = $_SESSION['u_usuario'];
       <label for="carrera">Seleccionar carrera</label>
       <select name="carrera" id="" class="form-control">
       <option value="elegir">Elegir una Opcion</option>
-      <option value="Ingeneria en Agronomia">Ingeneria en Agronomia</option>
-      <option value="Ingeneria Forestal">Ingeneria Forestal</option>
-      <option value="Infeneria en Industrias Alimentarias">Infeneria en Industrias Alimentarias</option>
+      <option value="Ingeneria en Agronomia">Ingenieria en Agronomia</option>
+      <option value="Ingeneria Forestal">Ingenieria Forestal</option>
+      <option value="Infeneria en Industrias Alimentarias">Ingenieria en Industrias Alimentarias</option>
       <option value="Licenciatura en Biologia">Licenciatura en Biologia</option>
-      <option value="Ingeneria Informatica">Ingeneria Informatica</option>
-      <option value="Ingeneria en Administracion">Ingeneria en Administracion </option>
-      <option value="Infeneria en Gestion Empresarial">Infeneria en Gestion Empresarial</option>
+      <option value="Ingeneria Informatica">Ingenieria Informática</option>
+      <option value="Ingeneria en Administracion">Ingenieria en Administracion </option>
+      <option value="Infeneria en Gestion Empresarial">Ingenieria en Gestion Empresarial</option>
   </select>
       </div>
 

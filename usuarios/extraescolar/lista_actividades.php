@@ -59,7 +59,7 @@ if(isset($_SESSION['u_usuario']) && $_SESSION['u_privilegio']  == 0){
                                     <tr>
                                         <th>#</th>
                                         <th>ACTIVIDAD</th>
-                                        <th>ENCARGADO</th>
+                                        <th>PROMOTOR</th>
                                         <th>HORAS</th>
                                         <th>ACCIONES</th>
                                     </tr>

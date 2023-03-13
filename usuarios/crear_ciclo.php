@@ -151,7 +151,7 @@ while ($filas = mysqli_fetch_assoc($resultado)) {
 
 <tr>
 
-<td><?php echo $filas['ciclo_escolar'] ?></td>
+<td><?php echo $filas['ciclo_escolar']?></td>
 <td><?php echo $filas['fecha_inicio']?></td>
 <td><?php echo $filas['fecha_fin']?></td>
 
